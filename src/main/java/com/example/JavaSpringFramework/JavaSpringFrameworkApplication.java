@@ -21,7 +21,8 @@ public class JavaSpringFrameworkApplication implements RepositoryRestConfigurer 
 		validatingListener.addValidator("beforeSave", validator());
 	}
 
-	@Bean
+	@Bean // applies external class (not defined in Spring) to Spring
+		  // has to be defined inside class with @Configuration annotation e.g. @SpringBootApplication
 	protected Validator validator() {
 		return new LocalValidatorFactoryBean();
 	}
