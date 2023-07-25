@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: local
+  main:
+    banner-mode: off
+#spring.datasource.username=root
+#spring.datasource.password=admin
+task:
+  allowMultipleTasksFromTemplate: false

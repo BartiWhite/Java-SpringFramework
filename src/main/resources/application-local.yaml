@@ -1,0 +1,11 @@
+spring:
+  h2.console:
+    enabled: true
+    path: '/console'
+  jpa:
+    show-sql: true
+  hibernate:
+    ddl-auto: create-drop
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:/Users/bartek/intellij-workspace/Java-SpringFramework/todo-db
